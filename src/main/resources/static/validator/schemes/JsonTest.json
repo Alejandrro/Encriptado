@@ -1,0 +1,638 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "mensaje": "Operación Exitosa",
+            "folio": "12a96aa1-7c11-41bf-8980-0b1a1812e3fd",
+            "resultado": {
+                "seguimiento": {
+                    "producto": {
+                        "id": 52,
+                        "codigo": "VTC1",
+                        "nombre": "VIDA TRANQUILIDAD CARD"
+                    },
+                    "titular": {
+                        "nombre": "cliente",
+                        "apellidoPaterno": "seguros",
+                        "apellidoMaterno": "azteca",
+                        "fechaNacimiento": "01/01/1990",
+                        "fechaDefuncion": "01/01/2021"
+                    },
+                    "grupoSiniestros": {
+                        "id": 80585,
+                        "certificados": [
+                            {
+                                "numero": "075182260468400202",
+                                "fechaInicioVigencia": "30/12/2019",
+                                "fechaFinVigencia": "28/12/2019",
+                                "estatusPago": "Pagado",
+                                "siniestro": {
+                                    "numero": "NVMX-2021-4470",
+                                    "fechaOcurrencia": "02/02/2021",
+                                    "causa": "Colisión",
+                                    "beneficiario": "Beneficiario Seguros Azteca",
+                                    "substatus": 1,
+                                    "descripcionSubestatus": "El cliente no ha documentado"
+                                }
+                            }
+                        ]
+                    },
+                    "comentarios": [
+                        {
+                            "usuario": "75262",
+                            "fechaHora": "18/10/2021 10:24:00",
+                            "descripcion": "Comentarios realizados por el usuario"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "required": [
+        "mensaje",
+        "folio",
+        "resultado"
+    ],
+    "properties": {
+        "mensaje": {
+            "$id": "#/properties/mensaje",
+            "type": "string",
+            "title": "The mensaje schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Operación Exitosa"
+            ]
+        },
+        "folio": {
+            "$id": "#/properties/folio",
+            "type": "string",
+            "title": "The folio schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "12a96aa1-7c11-41bf-8980-0b1a1812e3fd"
+            ]
+        },
+        "resultado": {
+            "$id": "#/properties/resultado",
+            "type": "object",
+            "title": "The resultado schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "seguimiento": {
+                        "producto": {
+                            "id": 52,
+                            "codigo": "VTC1",
+                            "nombre": "VIDA TRANQUILIDAD CARD"
+                        },
+                        "titular": {
+                            "nombre": "cliente",
+                            "apellidoPaterno": "seguros",
+                            "apellidoMaterno": "azteca",
+                            "fechaNacimiento": "01/01/1990",
+                            "fechaDefuncion": "01/01/2021"
+                        },
+                        "grupoSiniestros": {
+                            "id": 80585,
+                            "certificados": [
+                                {
+                                    "numero": "075182260468400202",
+                                    "fechaInicioVigencia": "30/12/2019",
+                                    "fechaFinVigencia": "28/12/2019",
+                                    "estatusPago": "Pagado",
+                                    "siniestro": {
+                                        "numero": "NVMX-2021-4470",
+                                        "fechaOcurrencia": "02/02/2021",
+                                        "causa": "Colisión",
+                                        "beneficiario": "Beneficiario Seguros Azteca",
+                                        "substatus": 1,
+                                        "descripcionSubestatus": "El cliente no ha documentado"
+                                    }
+                                }
+                            ]
+                        },
+                        "comentarios": [
+                            {
+                                "usuario": "75262",
+                                "fechaHora": "18/10/2021 10:24:00",
+                                "descripcion": "Comentarios realizados por el usuario"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "required": [
+                "seguimiento"
+            ],
+            "properties": {
+                "seguimiento": {
+                    "$id": "#/properties/resultado/properties/seguimiento",
+                    "type": "object",
+                    "title": "The seguimiento schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "producto": {
+                                "id": 52,
+                                "codigo": "VTC1",
+                                "nombre": "VIDA TRANQUILIDAD CARD"
+                            },
+                            "titular": {
+                                "nombre": "cliente",
+                                "apellidoPaterno": "seguros",
+                                "apellidoMaterno": "azteca",
+                                "fechaNacimiento": "01/01/1990",
+                                "fechaDefuncion": "01/01/2021"
+                            },
+                            "grupoSiniestros": {
+                                "id": 80585,
+                                "certificados": [
+                                    {
+                                        "numero": "075182260468400202",
+                                        "fechaInicioVigencia": "30/12/2019",
+                                        "fechaFinVigencia": "28/12/2019",
+                                        "estatusPago": "Pagado",
+                                        "siniestro": {
+                                            "numero": "NVMX-2021-4470",
+                                            "fechaOcurrencia": "02/02/2021",
+                                            "causa": "Colisión",
+                                            "beneficiario": "Beneficiario Seguros Azteca",
+                                            "substatus": 1,
+                                            "descripcionSubestatus": "El cliente no ha documentado"
+                                        }
+                                    }
+                                ]
+                            },
+                            "comentarios": [
+                                {
+                                    "usuario": "75262",
+                                    "fechaHora": "18/10/2021 10:24:00",
+                                    "descripcion": "Comentarios realizados por el usuario"
+                                }
+                            ]
+                        }
+                    ],
+                    "required": [
+                        "producto",
+                        "titular",
+                        "grupoSiniestros",
+                        "comentarios"
+                    ],
+                    "properties": {
+                        "producto": {
+                            "$id": "#/properties/resultado/properties/seguimiento/properties/producto",
+                            "type": "object",
+                            "title": "The producto schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "id": 52,
+                                    "codigo": "VTC1",
+                                    "nombre": "VIDA TRANQUILIDAD CARD"
+                                }
+                            ],
+                            "required": [
+                                "id",
+                                "codigo",
+                                "nombre"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "$id": "#/properties/resultado/properties/seguimiento/properties/producto/properties/id",
+                                    "type": "integer",
+                                    "title": "The id schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0,
+                                    "examples": [
+                                        52
+                                    ]
+                                },
+                                "codigo": {
+                                    "$id": "#/properties/resultado/properties/seguimiento/properties/producto/properties/codigo",
+                                    "type": "string",
+                                    "title": "The codigo schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "VTC1"
+                                    ]
+                                },
+                                "nombre": {
+                                    "$id": "#/properties/resultado/properties/seguimiento/properties/producto/properties/nombre",
+                                    "type": "string",
+                                    "title": "The nombre schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "VIDA TRANQUILIDAD CARD"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "titular": {
+                            "$id": "#/properties/resultado/properties/seguimiento/properties/titular",
+                            "type": "object",
+                            "title": "The titular schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "nombre": "cliente",
+                                    "apellidoPaterno": "seguros",
+                                    "apellidoMaterno": "azteca",
+                                    "fechaNacimiento": "01/01/1990",
+                                    "fechaDefuncion": "01/01/2021"
+                                }
+                            ],
+                            "required": [
+                                "nombre",
+                                "apellidoPaterno",
+                                "apellidoMaterno",
+                                "fechaNacimiento",
+                                "fechaDefuncion"
+                            ],
+                            "properties": {
+                                "nombre": {
+                                    "$id": "#/properties/resultado/properties/seguimiento/properties/titular/properties/nombre",
+                                    "type": "string",
+                                    "title": "The nombre schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "cliente"
+                                    ]
+                                },
+                                "apellidoPaterno": {
+                                    "$id": "#/properties/resultado/properties/seguimiento/properties/titular/properties/apellidoPaterno",
+                                    "type": "string",
+                                    "title": "The apellidoPaterno schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "seguros"
+                                    ]
+                                },
+                                "apellidoMaterno": {
+                                    "$id": "#/properties/resultado/properties/seguimiento/properties/titular/properties/apellidoMaterno",
+                                    "type": "string",
+                                    "title": "The apellidoMaterno schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "azteca"
+                                    ]
+                                },
+                                "fechaNacimiento": {
+                                    "$id": "#/properties/resultado/properties/seguimiento/properties/titular/properties/fechaNacimiento",
+                                    "type": "string",
+                                    "title": "The fechaNacimiento schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "01/01/1990"
+                                    ]
+                                },
+                                "fechaDefuncion": {
+                                    "$id": "#/properties/resultado/properties/seguimiento/properties/titular/properties/fechaDefuncion",
+                                    "type": "string",
+                                    "title": "The fechaDefuncion schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "01/01/2021"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "grupoSiniestros": {
+                            "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros",
+                            "type": "object",
+                            "title": "The grupoSiniestros schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "id": 80585,
+                                    "certificados": [
+                                        {
+                                            "numero": "075182260468400202",
+                                            "fechaInicioVigencia": "30/12/2019",
+                                            "fechaFinVigencia": "28/12/2019",
+                                            "estatusPago": "Pagado",
+                                            "siniestro": {
+                                                "numero": "NVMX-2021-4470",
+                                                "fechaOcurrencia": "02/02/2021",
+                                                "causa": "Colisión",
+                                                "beneficiario": "Beneficiario Seguros Azteca",
+                                                "substatus": 1,
+                                                "descripcionSubestatus": "El cliente no ha documentado"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "required": [
+                                "id",
+                                "certificados"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/id",
+                                    "type": "integer",
+                                    "title": "The id schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0,
+                                    "examples": [
+                                        80585
+                                    ]
+                                },
+                                "certificados": {
+                                    "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados",
+                                    "type": "array",
+                                    "title": "The certificados schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": [],
+                                    "examples": [
+                                        [
+                                            {
+                                                "numero": "075182260468400202",
+                                                "fechaInicioVigencia": "30/12/2019",
+                                                "fechaFinVigencia": "28/12/2019",
+                                                "estatusPago": "Pagado",
+                                                "siniestro": {
+                                                    "numero": "NVMX-2021-4470",
+                                                    "fechaOcurrencia": "02/02/2021",
+                                                    "causa": "Colisión",
+                                                    "beneficiario": "Beneficiario Seguros Azteca",
+                                                    "substatus": 1,
+                                                    "descripcionSubestatus": "El cliente no ha documentado"
+                                                }
+                                            }
+                                        ]
+                                    ],
+                                    "additionalItems": true,
+                                    "items": {
+                                        "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados/items",
+                                        "anyOf": [
+                                            {
+                                                "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados/items/anyOf/0",
+                                                "type": "object",
+                                                "title": "The first anyOf schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": {},
+                                                "examples": [
+                                                    {
+                                                        "numero": "075182260468400202",
+                                                        "fechaInicioVigencia": "30/12/2019",
+                                                        "fechaFinVigencia": "28/12/2019",
+                                                        "estatusPago": "Pagado",
+                                                        "siniestro": {
+                                                            "numero": "NVMX-2021-4470",
+                                                            "fechaOcurrencia": "02/02/2021",
+                                                            "causa": "Colisión",
+                                                            "beneficiario": "Beneficiario Seguros Azteca",
+                                                            "substatus": 1,
+                                                            "descripcionSubestatus": "El cliente no ha documentado"
+                                                        }
+                                                    }
+                                                ],
+                                                "required": [
+                                                    "numero",
+                                                    "fechaInicioVigencia",
+                                                    "fechaFinVigencia",
+                                                    "estatusPago",
+                                                    "siniestro"
+                                                ],
+                                                "properties": {
+                                                    "numero": {
+                                                        "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados/items/anyOf/0/properties/numero",
+                                                        "type": "string",
+                                                        "title": "The numero schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "075182260468400202"
+                                                        ]
+                                                    },
+                                                    "fechaInicioVigencia": {
+                                                        "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados/items/anyOf/0/properties/fechaInicioVigencia",
+                                                        "type": "string",
+                                                        "title": "The fechaInicioVigencia schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "30/12/2019"
+                                                        ]
+                                                    },
+                                                    "fechaFinVigencia": {
+                                                        "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados/items/anyOf/0/properties/fechaFinVigencia",
+                                                        "type": "string",
+                                                        "title": "The fechaFinVigencia schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "28/12/2019"
+                                                        ]
+                                                    },
+                                                    "estatusPago": {
+                                                        "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados/items/anyOf/0/properties/estatusPago",
+                                                        "type": "string",
+                                                        "title": "The estatusPago schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "Pagado"
+                                                        ]
+                                                    },
+                                                    "siniestro": {
+                                                        "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados/items/anyOf/0/properties/siniestro",
+                                                        "type": "object",
+                                                        "title": "The siniestro schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": {},
+                                                        "examples": [
+                                                            {
+                                                                "numero": "NVMX-2021-4470",
+                                                                "fechaOcurrencia": "02/02/2021",
+                                                                "causa": "Colisión",
+                                                                "beneficiario": "Beneficiario Seguros Azteca",
+                                                                "substatus": 1,
+                                                                "descripcionSubestatus": "El cliente no ha documentado"
+                                                            }
+                                                        ],
+                                                        "required": [
+                                                            "numero",
+                                                            "fechaOcurrencia",
+                                                            "causa",
+                                                            "beneficiario",
+                                                            "substatus",
+                                                            "descripcionSubestatus"
+                                                        ],
+                                                        "properties": {
+                                                            "numero": {
+                                                                "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados/items/anyOf/0/properties/siniestro/properties/numero",
+                                                                "type": "string",
+                                                                "title": "The numero schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "default": "",
+                                                                "examples": [
+                                                                    "NVMX-2021-4470"
+                                                                ]
+                                                            },
+                                                            "fechaOcurrencia": {
+                                                                "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados/items/anyOf/0/properties/siniestro/properties/fechaOcurrencia",
+                                                                "type": "string",
+                                                                "title": "The fechaOcurrencia schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "default": "",
+                                                                "examples": [
+                                                                    "02/02/2021"
+                                                                ]
+                                                            },
+                                                            "causa": {
+                                                                "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados/items/anyOf/0/properties/siniestro/properties/causa",
+                                                                "type": "string",
+                                                                "title": "The causa schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "default": "",
+                                                                "examples": [
+                                                                    "Colisión"
+                                                                ]
+                                                            },
+                                                            "beneficiario": {
+                                                                "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados/items/anyOf/0/properties/siniestro/properties/beneficiario",
+                                                                "type": "string",
+                                                                "title": "The beneficiario schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "default": "",
+                                                                "examples": [
+                                                                    "Beneficiario Seguros Azteca"
+                                                                ]
+                                                            },
+                                                            "substatus": {
+                                                                "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados/items/anyOf/0/properties/siniestro/properties/substatus",
+                                                                "type": "integer",
+                                                                "title": "The substatus schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "default": 0,
+                                                                "examples": [
+                                                                    1
+                                                                ]
+                                                            },
+                                                            "descripcionSubestatus": {
+                                                                "$id": "#/properties/resultado/properties/seguimiento/properties/grupoSiniestros/properties/certificados/items/anyOf/0/properties/siniestro/properties/descripcionSubestatus",
+                                                                "type": "string",
+                                                                "title": "The descripcionSubestatus schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "default": "",
+                                                                "examples": [
+                                                                    "El cliente no ha documentado"
+                                                                ]
+                                                            }
+                                                        },
+                                                        "additionalProperties": true
+                                                    }
+                                                },
+                                                "additionalProperties": true
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "comentarios": {
+                            "$id": "#/properties/resultado/properties/seguimiento/properties/comentarios",
+                            "type": "array",
+                            "title": "The comentarios schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                [
+                                    {
+                                        "usuario": "75262",
+                                        "fechaHora": "18/10/2021 10:24:00",
+                                        "descripcion": "Comentarios realizados por el usuario"
+                                    }
+                                ]
+                            ],
+                            "additionalItems": true,
+                            "items": {
+                                "$id": "#/properties/resultado/properties/seguimiento/properties/comentarios/items",
+                                "anyOf": [
+                                    {
+                                        "$id": "#/properties/resultado/properties/seguimiento/properties/comentarios/items/anyOf/0",
+                                        "type": "object",
+                                        "title": "The first anyOf schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "usuario": "75262",
+                                                "fechaHora": "18/10/2021 10:24:00",
+                                                "descripcion": "Comentarios realizados por el usuario"
+                                            }
+                                        ],
+                                        "required": [
+                                            "usuario",
+                                            "fechaHora",
+                                            "descripcion"
+                                        ],
+                                        "properties": {
+                                            "usuario": {
+                                                "$id": "#/properties/resultado/properties/seguimiento/properties/comentarios/items/anyOf/0/properties/usuario",
+                                                "type": "string",
+                                                "title": "The usuario schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "75262"
+                                                ]
+                                            },
+                                            "fechaHora": {
+                                                "$id": "#/properties/resultado/properties/seguimiento/properties/comentarios/items/anyOf/0/properties/fechaHora",
+                                                "type": "string",
+                                                "title": "The fechaHora schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "18/10/2021 10:24:00"
+                                                ]
+                                            },
+                                            "descripcion": {
+                                                "$id": "#/properties/resultado/properties/seguimiento/properties/comentarios/items/anyOf/0/properties/descripcion",
+                                                "type": "string",
+                                                "title": "The descripcion schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "Comentarios realizados por el usuario"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

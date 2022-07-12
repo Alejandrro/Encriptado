@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": 1,
+            "lenguaje": "Java",
+            "sistema": "Windows"
+        }
+    ],
+    "required": [
+        "id",
+        "lenguaje"
+    ],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "lenguaje": {
+            "$id": "#/properties/lenguaje",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Java"
+            ],
+            "pattern": "(^[a-zA-Z]+$)",
+            "title": "The lenguaje schema",
+            "type": "string"
+        },
+        "sistema": {
+            "$id": "#/properties/sistema",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Windows"
+            ],
+            "title": "The sistema schema",
+            "type": "string"
+        }
+    },
+    "additionalProperties": true
+}
